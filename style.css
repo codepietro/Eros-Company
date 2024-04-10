@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: arial;
+}
+
+.menu{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+
+}
+
+h3{
+    margin-left: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.linha{
+    background-color: black;
+    width: 30%;
+    height: 20px;
+}
+
+.linharight{
+    background-color: black;
+    width: 30%;
+    height: 20px;
+    float: right;
+
+}
+
+a{
+    padding: 6px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.logoeros{
+    width: 100px;
+    height: 100px;
+}
+
+.layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    }

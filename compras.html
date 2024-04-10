@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Eros</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        font-family: arial;
+    }
+
+    .menu {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .texto {
+        margin-left: 5px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .linha {
+        background-color: black;
+        width: 30%;
+        height: 20px;
+    }
+
+    .linharight {
+        background-color: black;
+        width: 30%;
+        height: 20px;
+        float: right;
+
+    }
+
+    a {
+        padding: 6px;
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    .logoeros {
+        width: 100px;
+        height: 100px;
+    }
+
+    form {
+        background-color: white;
+        width: 15%;
+        height: 350px;
+        margin: auto;
+        border: 2px solid;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        font-size: 13px;
+    }
+
+    .botao:hover {
+        background-color: grey;
+        transition: 0.6s;
+        opacity: 1.0;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="linha"></div>
+        <div class="menu">
+            <a href="index.html"><img src="logoeros.png" class="logoeros"></a>
+            <a href="menu/sobre.html">SOBRE</a>
+            <a href="menu/contato.html">CONTATO</a>
+        </div>
+        <div class="linharight"></div>
+
+        <br><br>
+
+        <div class="texto">
+        <h3>Finalize sua compra agora!</h3>
+
+        </div>
+
+            <form method="post" action="">
+                <label for="tamanho">Tamanho</label>
+                <br>
+                <select name="tamanho" size="1">
+                    <option value="pp">PP</option>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="gg">GG</option>
+                </select>
+
+                <br><br>
+
+                <label for="quant">Quantidade</label>
+                <br>
+                <input type="number" name="num" min="1" max="15">
+
+                <br><br>
+
+                <label for="email">E-mail</label>
+                <br>
+                <input type="email" name="email">
+
+                <br><br>
+
+                <input type="submit" class="botao" onclick="btn()" value="FINALIZAR">
+            </form>
+    </div>
+
+</body>
+<script>
+    function btn(){
+        alert("Compra realizada com sucesso! Um E-mail foi enviado para mais informações sobre o pagamento.")
+    }
+</script>
+
+</html>

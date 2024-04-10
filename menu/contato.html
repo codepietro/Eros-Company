@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Eros</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: arial;
+    }
+
+    .menu{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .linha{
+        background-color: black;
+        width: 30%;
+        height: 20px;
+    }
+
+    .linharight{
+        background-color: black;
+        width: 30%;
+        height: 20px;
+        float: right;
+    }
+
+    .logoeros{
+        width: 100px;
+        height: 100px;
+    }
+
+    a{
+        padding: 6px;
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    form{
+        background-color: white;
+        width: 15%;
+        height: 350px;
+        margin: auto;
+        border: 2px solid;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    input{
+        background: none;
+        border: none;
+        border-bottom: 1px solid;
+        outline: none;
+        font-size: 13px;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .botao:hover{
+        background-color: grey;
+        transition: 0.6s;
+        opacity: 1.0;
+    }
+
+
+
+</style>
+<body>
+    <div class="container">
+
+        <div class="linha"></div>
+        <div class="menu">
+            <a href="../index.html"><img src="../logoeros.png" class="logoeros"></a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
+        </div>
+
+        <div class="linharight"></div>
+
+        <br>
+
+        <div class="texto">
+            <h3>Quer entrar em contato com a empresa?</h3>
+        </div>
+
+            <form method="post" action="">
+                    <legend>FORMULÁRIO DE CONTATO</legend>
+                    <br>
+                    <label for="nome">Digite seu nome</label>
+                    <br>
+                    <input type="text" id="nome">
+                    <br><br>
+                    <label for="email">Digite seu E-mail</label>
+                    <br>
+                    <input type="email" id="email">
+                    <br><br>
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <br>
+                    <textarea id="mensagem"></textarea>
+                    <br><br>
+
+                    <input type="submit" class="botao" value="ENVIAR" onclick="enviar()">
+                    
+
+            </form>
+
+
+    </div>
+    
+</body>
+<script>
+    function enviar(){
+        alert("Mensagem enviada, em breve nossa equipe te dara uma resposta em seu E-mail!")
+    }
+</script>
+
+</html>
